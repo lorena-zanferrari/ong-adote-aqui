@@ -1,0 +1,137 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    width: 1200px;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    width: 290px;
+    height: 290px;
+    background-size: cover;
+    margin:5px;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    background-color: 109, 101, 101;
+    color: yellow;
+}
+
+.box{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 10rem;
+    line-height: 2rem;
+    margin: 0.5rem;
+    text-align: center;
+    background-color: rgb(109, 101, 101);
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+.adote, .cabecalho-nav .box {
+    transition: all .2s ease-in-out;
+}
+
+.adote:hover, .cabecalho-nav .box:hover {
+    background:yellow;
+    color:rgb(109, 101, 101);
+}
+
+.adote:hover {
+    font-size: 20px;
+}
+.hero{
+    background-image:url('img/rodape2.jpg');
+    background-size: contain;
+    background-repeat: none;
+    width: 100%;
+    height: 34rem;
+}
+
+.frase {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 5rem;
+    max-width: 60rem;
+    margin-left: 20%;
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-between;
+    max-width: 100%;
+    margin-top: 1rem;
+    height: 2rem;
+    padding: 0.5rem 1rem;
+    line-height: 2rem;
+    margin-right:auto;
+    margin-left: auto;
+    text-align: justify;
+    background-color: rgb(109, 101, 101);
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-image: "backgroundpet.jpg";
+        background-repeat: repeat;
+    }
+    .box {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .adote {
+        display: none;
+    }
+    .conteudo {
+        flex-direction: column;
+        display: flex;
+        width: auto;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: auto;
+        padding: auto;
+        margin: auto;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .hero{
+        height: 14rem;
+    }
+}
